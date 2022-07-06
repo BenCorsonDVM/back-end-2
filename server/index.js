@@ -7,7 +7,7 @@ app.use(express.json())
 app.use(cors())
 
 //import our controller function
-const {getHouses, createHouse, updateHouse, deleteHouse} = require('./controller')
+const {getHouses, createHouse, updateHouse, deleteHouse} = require('./controller.js')
 
 //endpoints
 app.get('/api/houses', getHouses)
